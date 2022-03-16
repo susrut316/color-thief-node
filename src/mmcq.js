@@ -476,7 +476,7 @@ exports.quantize = (pixels, maxcolors) => {
     }
 
     // Next set - generate the median cuts using the (npix * vol) sorting.
-    iter(pq2, maxcolors - pq2.size());
+    iter(pq2, maxcolors);
 
     // Calculate the actual colors.
     let cmap = new CMap();
