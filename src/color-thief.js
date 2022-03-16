@@ -69,9 +69,9 @@ const getPalette = (sourceImage, colorCount = 5, quality = 5) => {
         a = pixels[offset + 3];
         // If pixel is mostly opaque and not white.
         if (a >= 125) {
-            if (!(r > 250 && g > 250 && b > 250)) {
-                pixelArray.push([r, g, b]);
-            }
+            // if (!(r > 250 && g > 250 && b > 250)) {
+            pixelArray.push([r, g, b]);
+            // }
         }
     }
 
