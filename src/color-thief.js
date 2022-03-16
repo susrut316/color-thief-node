@@ -130,7 +130,6 @@ exports.getColor = (sourceImage, quality) => {
  * @return {Promise<{r: number, g: number, b: number}[]>}
  */
 exports.getPaletteFromURL = async (URL, colorCount, quality) => {
-    console.log('getPaletteFromURL');
     return loadImage(URL).then(image => getPalette(image, colorCount, quality));
 };
 
