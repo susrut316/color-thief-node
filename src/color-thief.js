@@ -80,7 +80,7 @@ const getPalette = (sourceImage, colorCount = 5, quality = 5) => {
     const cmap = quantize(pixelArray, colorCount);
     // If no palette is generated, it is mostly like that
     // the given image is completely white.
-    const palette = cmap ? cmap.palette() : [[255, 255, 255]];
+    const palette = cmap ? cmap.palette() : null;
 
     return palette;
 };
