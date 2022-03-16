@@ -46,7 +46,6 @@ const { quantize } = require('./mmcq');
  * @return {{r: number, g: number, b: number}[]}
  */
 const getPalette = (sourceImage, colorCount = 5, quality = 5) => {
-    console.log('getPalette');
     if (colorCount < 2 || colorCount > 256) {
         colorCount = 5;
     }
